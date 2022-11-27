@@ -1,0 +1,60 @@
+<html>
+
+<head>
+  <title>SuperHero</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Local css -->
+  <link rel="stylesheet" type="text/css" href="./hero.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</head>
+
+<body>
+  <div class="nav">
+    <span id="app-title">Superhero Hunter</span>
+    <div>
+      <button class="nav-btn" onclick="window.location.href='index.html'">
+        Home
+      </button>
+      <button class="nav-btn" onclick="window.location.href='favourites.html'">
+        Favourites
+      </button>
+    </div>
+  </div>
+  <main>
+    <div id="left">
+      <img id="avatar" />
+    </div>
+    <div id="right">
+      <div id="hero-title"></div>
+      <div id="about">
+        <div id="comics">
+          <span class="cate">comics</span>
+          <ul id="comics-details">
+          </ul>
+        </div>
+        <div id="series">
+          <span class="cate">Series</span>
+          <ul id="series-details">
+          </ul>
+        </div>
+
+        <div id="stories">
+          <span class="cate">Stories</span>
+          <ul id="stories-details">
+          </ul>
+        </div>
+
+        <div id="events">
+          <span class="cate">Events</span>
+          <ul id="events-details">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<!-- local JavaScript -->
+<script type="text/javascript" src="./hero.js"></script>
+
+</html>

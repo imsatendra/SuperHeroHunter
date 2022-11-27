@@ -1,0 +1,91 @@
+.nav {
+  background: black;
+  height: 70px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#app-title {
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: monospace;
+}
+
+.nav-btn {
+  background: #f2711c;
+  height: 43px;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  position: relative;
+  top: -1px;
+  width: 134.7px;
+}
+
+.nav-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+main {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#favourites-container {
+  position: absolute;
+  background: #fff;
+  width: 99%;
+  height: 70%;
+  box-sizing: border-box;
+  top: 27%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 100;
+  overflow: auto;
+}
+
+.fav-item .hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: wheat;
+}
+
+.fav-item .hero-info button {
+  margin: 20px 10px;
+  background: #21ba45;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  padding: 9px 0;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.fav-item {
+  display: flex;
+  margin-bottom: 10px;
+  border: 1px solid lightgray;
+  background-color: #fff3dc;
+}
+
+.fav-item img {
+  height: 150px;
+  width: 100px;
+}
+
+.fav-item>div span {
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 600;
+}

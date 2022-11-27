@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-position: center;
+  background-size: cover;
+}
+
+.nav {
+  background: black;
+  height: 70px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-container input {
+  height: 43px;
+  width: 600px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border: none;
+  font-size: 16px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.search-container {
+  position: relative;
+}
+
+#search-results {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #e1e1e1;
+  top: 42px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 100;
+}
+
+.search-result .hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.search-result .hero-info button {
+  margin: 20px 10px;
+  background: tomato;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  padding: 9px 0;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.search-result .hero-info button:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.search-result {
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 10px;
+  border: 1px solid lightgray;
+}
+
+.search-result img {
+  height: 150px;
+  width: 100px;
+}
+
+.search-result>div span {
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.search-container input:focus,
+.search-container button:focus,
+.search-result .hero-info button:focus {
+  outline: none;
+}
+
+.search-container button:hover,
+.search-result .hero-info button:hover {
+  cursor: pointer;
+}
+
+#app-title {
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: monospace;
+}
+
+#fvrt-btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#fvrt-btn:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+#about-app {
+  position: relative;
+  width: 50vw;
+  height: 70vh;
+  left: -2%;
+  top: 5%;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: .25rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  background-color: #388697;
+  color: white;
+  padding: .5rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.active.button,
+.button:hover {
+  color: #388697;
+  border: 2px solid #388697;
+  background-color: transparent;
+}
