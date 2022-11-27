@@ -57,7 +57,7 @@ function generatePagination(totalCount) {
         const button = Object.assign(document.createElement('a'), {
           className: 'button',
           innerText: page,
-          href:  "?page=" + page + "&offset=" + perPage * page
+          href: "?page=" + page + "&offset=" + perPage * page
         });
 
         pageWrapper.append(button);
